@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ticketing System">
+    <meta name="author" content="Mave Rick Paz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <title>Ticketing System</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <span class="navbar-brand m-auto h1">
+                TODO LIST
+            </span>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container my-5">
+            <div class="card bg-primary text-white">
+                <div class="card-header">
+                    Welcome, Please write down your todo list!
+                </div>
+                <div class="card-body">
+                    <form id="todo" autocomplete="off">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Enter title">
+                        </div>
+                        <div class="form-group">
+                            <label for="expiry">Expiry Date</label>
+                            <input type="date" class="form-control" id="expiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea class="form-control" id="description" placeholder=" Enter description"></textarea>
+                        </div>
+                        <p id="message" class="font-weight-bold mt-3"></p>
+                </div>
+                <div class="card-footer">
+                        <input type="submit" value="Submit" class="btn btn-success">
+                    </form>
+                </div>
+            </div>
+
+            <div id="showToDo" class="card bg-secondary text-white my-3" style="display: none;">
+                <div class="card-header h1">
+                    Your ToDo List
+                </div>
+                <div class="card-body">
+                    <ul id="list">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/bootstrap/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
